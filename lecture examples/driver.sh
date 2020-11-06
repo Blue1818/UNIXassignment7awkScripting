@@ -1,3 +1,3 @@
 #!/bin/bash
 
-awk –f average grades
+awk average grades
