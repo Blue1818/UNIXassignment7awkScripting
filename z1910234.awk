@@ -3,6 +3,9 @@
 BEGIN
 {
     FS = ":"
-    print Name              Position    Sales Amount
-    print ==========================================
+    print "Name              Position    Sales Amount"
+    print "=========================================="
+
+
+    
 }
