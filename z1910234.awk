@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/awk -f
+#  ^^^ maybe remove usr maybe.
 # Dale Westberg z1910234
 	# CSCI 330
 	# Assignment #3
