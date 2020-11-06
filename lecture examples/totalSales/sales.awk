@@ -6,5 +6,4 @@
 END {
  for (x in deptSales)
  print x, deptSales[x]
-}ls
-git
+}
