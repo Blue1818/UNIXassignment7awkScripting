@@ -20,8 +20,7 @@
  # print "Catalog has", NR, "parts"
 # }
 
-BEGIN
-{
+BEGIN {
 	
 
 	
@@ -42,7 +41,3 @@ BEGIN
 }
 
 
-END
-{
-	
-}
