@@ -25,7 +25,7 @@ BEGIN {
 
 	
 
-    FS = ":"
+    FS=":"
     print "Name              Position    Sales Amount"
     print "=========================================="
 }
@@ -35,7 +35,7 @@ BEGIN {
 # 2 & 3: 2 parallel arrays for associate name and position that use associate id as the index.
 /1/, /1/
 {
-	FS = ":"
+	
 
 	price[NR] = $1
 	print $1
