@@ -122,8 +122,8 @@ for (i in total)
 
 for (h in order)
 {
-	index = order[h];
-	print name[index], position[index], total[index];
+	myVal = order[h];
+	print name[myVal], position[myVal], total[myVal];
 }
 }
 
