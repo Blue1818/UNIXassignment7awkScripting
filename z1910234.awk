@@ -49,6 +49,7 @@ $0 != "" {
 		name[$1] 
 	else
 		split($4, dateCheck, "/")
+		dateCheck[3]
 		if (dateCheck[3] == 2018)
 			totals[$5] += (price[$5] * $3)
 			print totals[$5]
