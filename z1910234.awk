@@ -61,6 +61,7 @@ $0 != "" {
 			total[$5] += (price[$2] * $3);
 		}
 	}
+	print name[$1];
 }
 
 END {
