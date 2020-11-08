@@ -42,19 +42,22 @@ $0 != "" {
 	if ($1 == 1)
 		counter += 1
 	
+	#Counter number corresponds with the type of record.
 	if (counter == 1)
 		price[$1] = $4
 	
 	if (counter == 2)
 		name[$1] 
 	else
+	{
 		split($4, dateCheck, "/")
 		print dateCheck[3]
 		if (dateCheck[3] == 2018)
-			totals[$5] += (price[$5] * $3)
-			print totals[$5]
-
-	
+		{
+			total[$5] += (price[$5] * $3)
+			print total[$5]
+		}
+	}
 }
 
 
