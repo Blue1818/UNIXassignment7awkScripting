@@ -95,7 +95,6 @@ for (i in total)
 	#i = associate index
 	
 	max = 0;
-	#print i;
 	for (x in total)
 	{
 		flag = 0;
@@ -121,7 +120,8 @@ for (i in total)
 
 for (h in order)
 {
-	printf ("%-18s %s %.2d\n", name[order[h]], position[order[h]], total[order[h]]);
+	printf ("%-18s", name[order[h]);
+	#printf ("
 }
 }
 
