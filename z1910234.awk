@@ -120,7 +120,10 @@ for (i in total)
 }
 
 for (h in order)
-	print name[order[h]], position[order[h]], total[order[h]]
+{
+	print h, order[h];
+	print name[order[h]], position[order[h]], total[order[h]];
+}
 }
 
 
