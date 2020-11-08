@@ -58,9 +58,7 @@ $0 != "" {
 		if (dateCheck[3] == 2018)
 		{
 			total[$5] += (price[$2] * $3);
-			print total[$5];
 		}
-		print $1;
 	}
 }
 
