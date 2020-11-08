@@ -76,7 +76,7 @@ for (i = 0; i < length(name); i++)
 		}
 		if ((total[x] > max) && (flag == 0))
 		{
-			order[i] = name[x];
+			order[i] = x;
 		}
 	}
 }
