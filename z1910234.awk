@@ -48,10 +48,11 @@ $0 != "" {
 	if (counter == 2)
 		name[$1] 
 	else
-		position
+		split($4, dateCheck, "/")
+		if (dateCheck[3] == 2018)
+			totals[$5] += (price[$5] * $3)
 
-	price[NR] = $1
-	print $1
+	
 }
 
 
