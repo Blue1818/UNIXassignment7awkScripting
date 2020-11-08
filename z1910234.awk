@@ -63,7 +63,7 @@ $0 != "" {
 }
 
 END {
-for (i = 0; i < length(name); i++)
+for (i in name)
 {
 	max = 0;
 
