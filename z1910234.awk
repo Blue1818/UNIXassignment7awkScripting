@@ -122,9 +122,8 @@ for (i in total)
 
 for (h in order)
 {
-	print h, order[h];
-	print name[order[h]];
-	#, position[order[h]], total[order[h]];
+	index = order[h];
+	print name[index], position[index], total[index];
 }
 }
 
