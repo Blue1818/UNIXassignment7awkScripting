@@ -34,7 +34,7 @@ BEGIN {
 
 # First create 4 arrays for the 4 different types of information.
 # 1: Array of product prices, using product id as the index.
-# 2 & 3: 2 parallel arrays for associate name and position that use associate id as the index.
+# 2 & 3: 2 parallel arrays for associate id (index is the name), and position that uses associate id as the index.
 # 4: Array total amounts sold using associate id as the index.
 $0 != "" {
 	#Counter starts at 0.
@@ -60,6 +60,31 @@ $0 != "" {
 			total[$5] += (price[$2] * $3);
 		}
 	}
+}
+
+END {
+for (i = 0; i < length(name); i++)
+{
+	max = 0;
+
+	for (x in name)
+	{
+		flag = 0;
+		for (j = 0; j < i; j++)
+		{
+			if (x == order[j]) flag = 1;
+		}
+		if ((total[x] > max) && (flag == 0))
+		{
+			order[i] = name[x];
+		}
+	}
+}
+
+for (h in order)
+{
+	print order[h];
+}
 }
 
 
