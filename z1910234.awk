@@ -66,7 +66,7 @@ END {
 for (i in name)
 {
 	max = 0;
-
+	print i;
 	for (x in name)
 	{
 		flag = 0;
