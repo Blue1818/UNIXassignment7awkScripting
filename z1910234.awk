@@ -95,7 +95,7 @@ for (i in total)
 	#i = associate index
 	
 	max = 0;
-	print i;
+	#print i;
 	for (x in total)
 	{
 		flag = 0;
@@ -112,7 +112,7 @@ for (i in total)
 			{
 				order[counter3] = x;
 				max = total[x];
-				print order[counter3];
+				#print order[counter3];
 			}
 		}
 	}
