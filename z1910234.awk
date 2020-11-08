@@ -121,7 +121,7 @@ for (i in total)
 
 for (h in order)
 {
-	print order[h], total[order[h]];
+	printf ("%-18s%s%+.2d" name[order[h]], position[order[h]], total[order[h]]);
 }
 }
 
