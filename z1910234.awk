@@ -34,7 +34,7 @@ BEGIN {
 # 1: array of product prices, using product id as the index.
 # 2 & 3: 2 parallel arrays for associate name and position that use associate id as the index.
 
-/1/, /1/{
+$0 != "" {
 	
 	
 
