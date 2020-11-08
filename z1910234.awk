@@ -37,7 +37,7 @@ BEGIN {
 {
 	
 
-	#price[NR] = $1
+	price[NR] = $1
 	print $1
 }
 
