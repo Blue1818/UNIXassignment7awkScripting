@@ -63,14 +63,43 @@ $0 != "" {
 }
 
 END {
-for (i in name)
+order[0]
+# for (i in name)
+# {
+	# max = 0;
+	# print i;
+	# for (x in name)
+	# {
+		# flag = 0;
+		# for (j = 0; j < i; j++)
+		# {
+			# if (x == order[j])
+			# {
+				# flag = 1;
+			# }
+		# }
+		# if (total[x] > max)
+		# {
+			# if (flag == 0)
+			# {
+				# order[i] = x;
+				# max = total[x];
+				# print order[i];
+			# }
+		# }
+	# }
+# }
+counter3 = 0
+for (i in total)
 {
+	#i = associate index
+	
 	max = 0;
 	print i;
-	for (x in name)
+	for (x in total)
 	{
 		flag = 0;
-		for (j = 0; j < i; j++)
+		for (j = 0; j < length(order); j++)
 		{
 			if (x == order[j])
 			{
@@ -81,12 +110,13 @@ for (i in name)
 		{
 			if (flag == 0)
 			{
-				order[i] = x;
+				order[counter3] = x;
 				max = total[x];
-				print order[i];
+				print order[counter3];
 			}
 		}
 	}
+	counter3 += 1;
 }
 
 for (h in order)
