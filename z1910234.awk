@@ -119,10 +119,7 @@ for (i in total)
 }
 
 for (h in order)
-{
-	printf ("%-18s", name[order[h]);
-	#printf ("
-}
+	print name[order[h]], position[order[h]], total[order[h]]
 }
 
 
