@@ -123,7 +123,8 @@ for (i in total)
 for (h in order)
 {
 	myVal = order[h];
-	print name[myVal], position[myVal], total[myVal];
+	print name[myVal];
+	#, position[myVal], total[myVal];
 }
 }
 
