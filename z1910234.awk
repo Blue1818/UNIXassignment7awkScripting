@@ -47,11 +47,14 @@ $0 != "" {
 		price[$1] = $4
 	
 	if (counter == 2)
-		name[$1] 
+	{
+		name[$1] = $2;
+		position[$1] = $3;
+		total[$1] = 0;
+	}
 	else
 	{
 		split($4, dateCheck, "/");
-		print dateCheck[3];
 		if (dateCheck[3] == 2018)
 		{
 			total[$5] += (price[$2] * $3);
