@@ -121,7 +121,7 @@ for (i in total)
 
 for (h in order)
 {
-	print order[h];
+	print order[h], total[order[h]];
 }
 }
 
