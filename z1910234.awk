@@ -74,11 +74,14 @@ for (i in name)
 		{
 			if (x == order[j]) flag = 1;
 		}
-		if (total[x] > max && flag == 0)
+		if (total[x] > max)
 		{
-			order[i] = x;
-			max = total[x];
-			print order[i];
+			if (flag == 0)
+			{
+				order[i] = x;
+				max = total[x];
+				print order[i];
+			}
 		}
 	}
 }
