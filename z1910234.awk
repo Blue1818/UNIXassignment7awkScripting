@@ -77,6 +77,7 @@ for (i in name)
 		if ((total[x] > max) && (flag == 0))
 		{
 			order[i] = x;
+			print order[i];
 		}
 	}
 }
