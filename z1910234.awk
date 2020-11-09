@@ -108,7 +108,7 @@ END {
 		
 		#printImg = sprintf("%42d", total[order[h]])
 		
-		printf("%-18s%s\n", name[myVal], sprintf("%-12s", position[myVal]))
+		printf("%s%s\n", sprintf("%-18s", name[myVal]), sprintf("%-12s", position[myVal]))
 
 		
 		#total[order[h]]
