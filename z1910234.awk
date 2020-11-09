@@ -97,8 +97,10 @@ END {
 		#myVal -> associate id.
 		myVal = int(order[h]);
 		
-		printImg1 = sprintf ("%-18s", name[myVal]);
-		printImg2 = sprintf ("%-12s\n", position[myVal]);
+		printImg1 = sprintf ("%-17s", name[myVal])
+		print printImg1
+		printImg2 = sprintf ("%-11s\n", position[myVal])
+		print printImg2
 		#printImg3 = sprintf (
 		
 		print printImg1, printImg2;
