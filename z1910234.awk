@@ -107,7 +107,6 @@ END {
 		#print printImg1, printImg2
 		
 		#printImg = sprintf("%42d", total[order[h]])
-		print order[h]
 		printImg1 = " "
 		printImg1 = name[myVal]
 		printImg1 = " "
