@@ -98,7 +98,7 @@ END {
 		myVal = int(order[h]);
 		
 		printf "%-18s", name[myVal];
-		printf "%-12s \n", position[myVal];
+		printf "%-12s\n", position[myVal];
 		
 		#total[order[h]]
 	}
