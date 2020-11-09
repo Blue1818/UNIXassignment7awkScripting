@@ -117,7 +117,7 @@ END {
 		#print printImg2
 		
 		printf ("%s", printImg1)
-		printf("%s\n", printImg2)
+		printf("%-s\n", printImg2)
 
 		
 		#total[order[h]]
