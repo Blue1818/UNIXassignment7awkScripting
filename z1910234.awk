@@ -115,6 +115,8 @@ END {
 		printImg2 = position[myVal]
 		printImg2 = sprintf("%12s", printImg2)
 		#print printImg2
+		printImg3 = " "
+		printImg3 = sprintf(" %.2f\n", total[order[h]])
 		
 		printf ("%s", printImg1)
 		printf("%s", printImg2)
