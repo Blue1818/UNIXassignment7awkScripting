@@ -124,7 +124,7 @@ for (h in order)
 {
 	myVal = order[h];
 	print myVal;
-	print name[myVal];
+	print name[int(myVal)];
 	print name[1];
 	#, position[myVal], total[myVal];
 }
