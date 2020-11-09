@@ -65,41 +65,41 @@ $0 != "" {
 }
 
 END {
-order[0]
-counter3 = 0
-for (i in total)
-{
-	#i = associate index
-	
-	max = 0;
-	for (x in total)
+	order[0]
+	counter3 = 0
+	for (i in total)
 	{
-		flag = 0;
-		for (j = 0; j < length(order); j++)
+		#i = associate index
+		
+		max = 0;
+		for (x in total)
 		{
-			if (x == order[j])
+			flag = 0;
+			for (j = 0; j < length(order); j++)
 			{
-				flag = 1;
+				if (x == order[j])
+				{
+					flag = 1;
+				}
+			}
+			if (total[x] > max)
+			{
+				if (flag == 0)
+				{
+					order[counter3] = x;
+					max = total[x];
+				}
 			}
 		}
-		if (total[x] > max)
-		{
-			if (flag == 0)
-			{
-				order[counter3] = x;
-				max = total[x];
-			}
-		}
+		counter3 += 1;
 	}
-	counter3 += 1;
-}
 
-for (h in order)
-{
-	#myVal -> associate id.
-	myVal = int(order[h]);
-	print name[myVal] , position[myVal], total[myVal];
-}
+	for (h in order)
+	{
+		#myVal -> associate id.
+		myVal = int(order[h]);
+		print name[myVal] , position[myVal], total[order[h]];
+	}
 }
 
 
