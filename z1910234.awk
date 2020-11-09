@@ -115,7 +115,7 @@ END {
 		printImg2 = position[myVal]
 		printImg2 = sprintf("%-12s", printImg2)
 		
-		printf ("%s", printImg1)
+		#printf ("%s", printImg1)
 		printf("%s", printImg2)
 
 		
