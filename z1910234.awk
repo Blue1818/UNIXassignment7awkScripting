@@ -96,7 +96,8 @@ END {
 	{
 		#myVal -> associate id.
 		myVal = int(order[h]);
-		printf "%-18s %-12s\n", name[myVal], position[myVal];
+		print name[myVal];
+		printf "%-17s %-12s\n", name[myVal], position[myVal];
 		#total[order[h]]
 	}
 }
