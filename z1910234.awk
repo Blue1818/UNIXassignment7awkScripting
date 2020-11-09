@@ -106,7 +106,7 @@ END {
 		#printImg3 = sprintf (
 		#print printImg1, printImg2
 		
-		print name[myVal] "," position[myVal] total[order[h]]
+		print name[myVal] "," position[myVal] "," total[order[h]]
 		
 		#total[order[h]]
 	}
