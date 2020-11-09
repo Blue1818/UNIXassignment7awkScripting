@@ -118,8 +118,9 @@ END {
 		printImg3 = " "
 		printImg3 = sprintf(" %.2f\n", total[order[h]])
 		
-		printf ("%s", printImg1)
 		printf("%s", printImg2)
+		printf ("%s", printImg1)
+		
 		printf(" %s\n", total[order[h]])
 
 		
