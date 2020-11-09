@@ -103,7 +103,7 @@ END {
 		print printImg2
 		#printImg3 = sprintf (
 		
-		print printImg1, printImg2;
+		print printImg1, printImg2
 		
 		#total[order[h]]
 	}
