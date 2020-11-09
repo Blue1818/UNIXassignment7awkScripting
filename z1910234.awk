@@ -49,7 +49,6 @@ $0 != "" {
 	if (counter == 2)
 	{
 		name[$1] = $2;
-		#print name[$1];
 		position[$1] = $3;
 		total[$1] = 0;
 	}
@@ -61,7 +60,6 @@ $0 != "" {
 			total[$5] += (price[$2] * $3);
 		}
 	}
-	#print name[$1];
 }
 
 END {
@@ -98,7 +96,7 @@ END {
 	{
 		#myVal -> associate id.
 		myVal = int(order[h]);
-		printf("'%-15s %-12s'", name[myVal], position[myVal]);
+		printf("'%-15s %-12s'", string(name[myVal]), string(position[myVal]));
 		#total[order[h]]
 	}
 }
