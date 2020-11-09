@@ -115,7 +115,7 @@ END {
 		printImg2 = position[myVal]
 		
 		printf ("%s", printImg1)
-		print sprintf("%-12s", printImg2)
+		#print sprintf("%-12s", printImg2)
 
 		
 		#total[order[h]]
