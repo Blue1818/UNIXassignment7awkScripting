@@ -120,7 +120,7 @@ END {
 		
 		printf ("%s", printImg1)
 		printf("%s", printImg2)
-		printf(" %.2f\n", total[order[h]])
+		printf(" %s\n", total[order[h]])
 
 		
 		#total[order[h]]
