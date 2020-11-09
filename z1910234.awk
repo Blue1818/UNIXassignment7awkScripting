@@ -116,8 +116,8 @@ END {
 		printImg2 = sprintf("%12s", printImg2)
 		print printImg2
 		
-		#printf ("%s", printImg1)
-		#printf("%s", printImg2)
+		printf ("%s", printImg1)
+		printf("%s", printImg2)
 
 		
 		#total[order[h]]
