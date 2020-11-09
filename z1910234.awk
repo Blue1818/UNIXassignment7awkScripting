@@ -28,8 +28,8 @@ BEGIN {
 	#counter as index for third records
 	counter2 = 0
     FS= ":" 
-    print "Name              Position    Sales Amount"
-    print "=========================================="
+    print "Name                Position    Sales Amount"
+    print "============================================"
 }
 
 # First create 4 arrays for the 4 different types of information.
@@ -113,7 +113,7 @@ END {
 		printImg1 = " "
 		printImg2 = position[myVal]
 		
-		print sprintf("%-17s", printImg1), sprintf("%-12s", printImg2)
+		print sprintf("%-19s", printImg1), sprintf("%-12s", printImg2)
 
 		
 		#total[order[h]]
