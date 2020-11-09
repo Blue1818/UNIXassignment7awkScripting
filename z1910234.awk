@@ -48,7 +48,9 @@ $0 != "" {
 	
 	if (counter == 2)
 	{
+		name[$1] = "                  ";
 		name[$1] = $2;
+		position[$1] = "            "
 		position[$1] = $3;
 		total[$1] = 0;
 	}
