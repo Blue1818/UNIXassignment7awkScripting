@@ -97,15 +97,16 @@ END {
 	for (h in order)
 	{
 		#myVal -> associate id.
-		myVal = int(order[h]);
+		myVal = int(order[h])
 		
-		printImg1 = sprintf ("%-17s", name[myVal])
-		print printImg1
-		printImg2 = sprintf ("%-11s\n", position[myVal])
-		print printImg2
+		# printImg1 = sprintf ("%-17s", name[myVal])
+		# print printImg1
+		# printImg2 = sprintf ("%-11s\n", position[myVal])
+		# print printImg2
 		#printImg3 = sprintf (
+		#print printImg1, printImg2
 		
-		print printImg1, printImg2
+		print name[myVal] "," position[myVal] total[order[h]]
 		
 		#total[order[h]]
 	}
