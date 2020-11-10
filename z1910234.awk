@@ -52,6 +52,7 @@ $0 != "" {
 		name[$1] = $2;
 		#position[$1] = "            "
 		position[$1] = $3;
+		position[$1] = substr(position[$1], 1, (length(position[$1]) - 1))
 		total[$1] = 0;
 	}
 	else
