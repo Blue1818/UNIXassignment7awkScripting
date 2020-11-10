@@ -5,21 +5,6 @@
 	# Assignment #3
 	# 9/18/20
 
-# BEGIN {
- # FS= ":"
- # print "Marine Parts R Us"
- # print "Main catalog"
- # print "Part-id\tname\t\t\t price"
- # print "=================================="
-# }
-# {
- # printf("%3d\t%-20s\t%6.2f\n", $1, $2, $3)
-# }
-# END {
- # print "=================================="
- # print "Catalog has", NR, "parts"
-# }
-
 BEGIN {
 	
 
@@ -48,12 +33,13 @@ $0 != "" {
 	
 	if (counter == 2)
 	{
-		#name[$1] = "                  ";
-		name[$1] = $2;
-		#position[$1] = "            "
-		position[$1] = $3;
+		#assign to name[associate id]
+		name[$1] = $2
+		#assign to position[associate id]
+		position[$1] = $3
+		#take out weird newline character 
 		position[$1] = substr(position[$1], 1, (length(position[$1]) - 1))
-		total[$1] = 0;
+		total[$1] = 0
 	}
 	else
 	{
@@ -100,31 +86,9 @@ END {
 		#myVal -> associate id.
 		myVal = int(order[h])
 		
-		# printImg1 = sprintf ("%-17s", name[myVal])
-		# print printImg1
-		# printImg2 = sprintf ("%-11s\n", position[myVal])
-		# print printImg2
-		#printImg3 = sprintf (
-		#print printImg1, printImg2
-		
-		#printImg = sprintf("%42d", total[order[h]])
-		printImg1 = " "
-		printImg1 = name[myVal] 
-		printImg1 = sprintf("%-19s", printImg1)
-		#print printImg1
-		printImg2 = " "
-		printImg2 = position[myVal]
-		printImg2 = sprintf("%12s", printImg2)
-		#print printImg2
-		printImg3 = " "
-		printImg3 = sprintf(" %.2f\n", total[order[h]])
-		
-		printf("%s", printImg2)
-		#^^ its the position. its something wrong with the file because its the end of the line or something.
-		printf ("%s", printImg1)
-		
-		printf(" %s\n", total[order[h]])
-
+		#print line formated to; name = 20 left-justified, position = 12 left-justified, total = 13 and 2 decimal places.
+		printf ("%-20s%-12s%12.2f\n", name[myVal], position[myVal], total[order[h]])
+	
 		
 		#total[order[h]]
 	}
