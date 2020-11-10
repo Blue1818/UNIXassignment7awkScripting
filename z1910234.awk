@@ -119,6 +119,7 @@ END {
 		printImg3 = sprintf(" %.2f\n", total[order[h]])
 		
 		printf("%s", printImg2)
+		#^^ its the position. its something wrong with the file because its the end of the line or something.
 		printf ("%s", printImg1)
 		
 		printf(" %s\n", total[order[h]])
